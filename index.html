@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BreakUp Simulator – Code Edition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💔 BreakUp Simulator – Code Edition 💔</h1>
+    <div id="stack-selection" class="section">
+      <p>Select your ex-tech stack:</p>
+      <div class="buttons">
+        <button onclick="startBreakup('react')">⚛️ React</button>
+        <button onclick="startBreakup('python')">🐍 Python</button>
+        <button onclick="startBreakup('git')">🔧 Git</button>
+      </div>
+    </div>
+
+    <div id="chat-container" class="chat hidden">
+      <div id="chat-box"></div>
+      <div id="reply-options" class="hidden">
+        <button onclick="userReply('I can change!')">I can change!</button>
+        <button onclick="userReply('You never appreciated me.')">You never appreciated me.</button>
+      </div>
+    </div>
+
+    <div id="end-message" class="end hidden">
+      <p>It's over. But maybe... someday, you'll refactor this relationship 💔</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
